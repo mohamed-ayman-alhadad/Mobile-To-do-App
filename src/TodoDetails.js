@@ -12,11 +12,12 @@ const TodoDetails = () => {
       <View
         style={{ borderWidth: 2, padding: 20, backgroundColor: "lightblue" }}
       >
-        <Text style={{ marginBottom: 10, fontSize: 20 }}>
-          <Text style={{ fontWeight: "bold" }}>number:</Text> {params.task.id}
-        </Text>
+         
         <Text style={{ marginBottom: 10, fontSize: 20 }}>
           <Text style={{ fontWeight: "bold" }}>Task:</Text> {params.task.title}
+        </Text>
+        <Text style={{ marginBottom: 10, fontSize: 20 }}>
+          <Text style={{ fontWeight: "bold" }}>Discreption:</Text> {params.task.discreption}
         </Text>
         <Text style={{ marginBottom: 10, fontSize: 20 }}>
           <Text style={{ fontWeight: "bold" }}>Done: </Text>

@@ -1,0 +1,82 @@
+import { StyleSheet } from "react-native";
+
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 20,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  todo: {
+    paddingTop: 5,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    width: "100%",
+  },
+  text: {
+    fontSize: 30,
+    textTransform: "uppercase",
+    fontWeight: "bold",
+    marginBottom: 20,
+    marginTop: 20,
+  },
+  textInput: {
+    width: "90%",
+    padding: 10,
+    borderColor: "gray",
+    borderWidth: 1,
+    borderRadius: 5,
+    marginBottom: 15,
+  },
+  TouchableOpacity: {
+    width: "45%",
+    padding: 20,
+    alignItems: "center",
+    backgroundColor: "black",
+    borderRadius: 10,
+  },
+  breakLine: {
+    width: "90%",
+    height: 0.5,
+    backgroundColor: "gray",
+    marginVertical: 10,
+  },
+  pressed: {
+    width: "30%",
+    padding: 10,
+    alignItems: "center",
+    backgroundColor: "black",
+    borderRadius: 15,
+    borderColor: "gray",
+    borderWidth: 1,
+  },
+  unpressed: {
+    width: "30%",
+    padding: 10,
+    alignItems: "center",
+    borderRadius: 15,
+    borderColor: "gray",
+    borderWidth: 1,
+  },
+  item: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: "90%",
+    padding: 10,
+    borderColor: "gray",
+    borderWidth: 1.5,
+    borderRadius: 15,
+    marginBottom: 10,
+  },
+  notasks: {
+    padding: 20,
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "red",
+    opacity: 0.7,
+  },
+});
+export default styles;
