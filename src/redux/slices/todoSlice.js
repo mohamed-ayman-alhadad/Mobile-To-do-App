@@ -4,7 +4,6 @@ const todoSlice = createSlice({
   name: "todo",
   initialState: {
     todos:  [],
-    done: false,
     filteredTodos:[]
   },
   reducers: {
@@ -28,7 +27,7 @@ const todoSlice = createSlice({
         }else if(action.payload === 'done'){
            state.filteredTodos = state.todos.filter((todo) => todo.done === true)
 
-        }else{
+        }else if(action.payload === 'inProgress'){
            state.filteredTodos = state.todos.filter((todo) => todo.done === false)
             
         }

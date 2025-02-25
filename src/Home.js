@@ -19,6 +19,7 @@ const Home = () => {
         id: Date.now(),
         title: title,
         discreption: discreption,
+        done: false,
       })
     );
     setTitle("");
@@ -50,8 +51,8 @@ const Home = () => {
         value={discreption}
         onChangeText={(e) => setDiscreption(e)}
       />
-      <TouchableOpacity style={styles.TouchableOpacity}>
-        <Text style={{ color: "white" }} onPress={() => addTask()}>
+      <TouchableOpacity  onPress={() => addTask()} style={styles.TouchableOpacity}>
+        <Text style={{ color: "white" }}>
           Submit
         </Text>
       </TouchableOpacity>
